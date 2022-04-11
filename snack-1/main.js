@@ -68,7 +68,6 @@ const cars =[
 
 ];
 
-
 const oilCars = cars.filter(car => car.fuelType == "benzina")
 
 console.log(oilCars);

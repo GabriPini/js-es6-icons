@@ -6,7 +6,16 @@ Es: ['grogu', 'MANDO', 'Luke'] =>  ['Grogu', 'Mando', 'Luke']
 
 const randomWords = ['dromedario','Appalachia','BRUNO','MONEY']
 console.log(randomWords)
-const capitalizedWord = [capitalize(randomWords)]
+
+
+const newArr = randomWords.map(element => {
+    return element.charAt(0).toUpperCase() + element.substring(1).toLowerCase();
+    
+});
+console.log(newArr)
+
+
+/* const capitalizedWord = [capitalize(randomWords)]
 console.log(capitalizedWord)
 
 function capitalize(array) {
@@ -16,3 +25,4 @@ function capitalize(array) {
     });
 }
   
+ */
